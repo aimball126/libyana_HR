@@ -61,8 +61,8 @@ Auth::routes();
 
 
 Route::get('/sections', [HomeController::class, 'sections'])->name('sections');
-Route::get('/home', [ShopController::class, 'index'])->name('home');
-Route::get('/', [ShopController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 Route::get("/shop","ShopController@index");

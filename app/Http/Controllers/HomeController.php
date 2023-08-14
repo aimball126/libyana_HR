@@ -16,10 +16,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
 
     /**
      * Show the application dashboard.
@@ -28,10 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //$sum = ViewUserData::sum('items_price');
-        $returns_sum =0;
-        $purchases_sum = purchases::sum('price');
-        return view('HomePage.home',compact('returns_sum','purchases_sum'));
+        return view('website.index');
     }
     public function sections()
     {
