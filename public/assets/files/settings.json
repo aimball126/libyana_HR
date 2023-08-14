@@ -1,0 +1,18 @@
+{
+    "name": "مصلحة المطارات - وزارة المواصلات",
+    "logo": "http://127.0.0.1:8000/storage/config/3mveZxnJqGqa8IPERZo8ABgYTnVwOc3FNHBDFzJe.png",
+    "primary_color": "#030c83",
+    "secondary_color": "#115f79",
+    "mail_mailer": "smtp",
+    "mail_host": "mailhog",
+    "mail_port": "1025",
+    "mail_encryption": "ssl",
+    "mail_username": "ahmed",
+    "mail_password": "ahmed",
+    "weekends": [
+        "friday",
+        "saturday"
+    ],
+    "presidents_name" : "اسم تجريبي فقط",
+    "presidents_title" : "رئيس مصلحة المطارات/ المكلف"
+}

@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'khalid-art-font';
+    src: url(/assets/fonts/khalid-Art-bold.ttf);
+}
+
+.sheet {
+    background-size: cover;
+    font-family: 'khalid-art-font', Arial, sans-serif;
+    width: 100%;
+}
+
+.en-title {
+    color: #0070C0 !important;
+    position: absolute;
+    top: 151px;
+    margin: auto;
+    left: 280px;
+
+}
+
+.id {
+    position: absolute;
+    top: 262px;
+    margin: auto;
+    left: 398px;
+    font-family: Arial, sans-serif;
+}
+
+.company-name {
+    position: absolute;
+    top: 290px;
+    margin: auto;
+    left: 281px;
+}
+
+.company-name-en {
+    position: absolute;
+    top: 319px;
+    margin: auto;
+    left: 407px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-container {
+    position: absolute;
+    top: 345px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    left: 77px;
+}
+
+
+.renew-date {
+    position: absolute;
+    top: 723px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    left: 329px;
+    font-size: 15px;
+    letter-spacing: 10px;
+}
+
+.text {
+    position: absolute;
+    top: 675px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    color: red;
+    text-align: right;
+    right: 123px;
+    max-width: 450px;
+    display: block;
+    justify-content: start;
+}
+
+
+.presidents-info {
+    position: absolute;
+    bottom: 243px;
+    margin: auto;
+    left: 77px;
+    text-align: center;
+}
+
+h6.presidents-name , h6.presidents-title {
+    padding-top: 15px;
+    margin: 0px !important;
+}
