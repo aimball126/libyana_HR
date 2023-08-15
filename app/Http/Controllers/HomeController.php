@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ViewUserData;
 use App\purchases;
+use App\Requestt;
 use App\Returns;
 use App\Sale;
 use Illuminate\Http\Request;
@@ -27,8 +28,13 @@ class HomeController extends Controller
     {
         return view('website.index');
     }
-    public function sections()
+    public function dashboard()
     {
-        return view('sections');
+        return view('HomePage.home');
+    }
+    public function requests()
+    {
+        $requests = Requestt::orderByDesc('id')->paginate(20);
+        return view('requests',compact('requests'));
     }
 }

@@ -30,7 +30,7 @@ use App\Http\Requests\MultiStepFormRequest;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\RequestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,7 +63,9 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/', [HomeController::class, 'index'])->name('home');
-use App\Http\Controllers\RequestController;
+Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+Route::get('/requests', [HomeController::class, 'requests'])->name('requests');
+
 
 Route::post('/requests', [RequestController::class, 'store'])->name('requests.store');
 

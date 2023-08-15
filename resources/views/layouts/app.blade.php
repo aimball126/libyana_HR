@@ -40,7 +40,7 @@
                 <a href="{{url('/')}}" class="logo">
                     <span class="logo-light">
                         <!-- <img src="{{config('global.logo')}}" alt="" width="140" /> -->
-                        <img src="{{asset('/assets/images/logo.png')}}" width="120" height="85"/>
+                        <img src="{{asset('/assets/images/logo.png')}}" width="100" height="50"/>
                     </span>
 
                     <span class="logo-sm">
