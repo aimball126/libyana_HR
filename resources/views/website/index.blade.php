@@ -69,6 +69,11 @@
 </head>
 
 <body>
+    @if(session('done'))
+    <div class="alert alert-success">
+        {{ session('done') }}
+    </div>
+@endif
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -289,49 +294,82 @@
                             our team will reach out to you shortly after.</h6>
                     </div>
                 </div>
+
                 <div class="col-lg-6 wow fadeInUp purple-bg data-wow-delay=0.5s">
                     <h6 class="mb-4 text-white">Please fill the following information:</h6>
+                    <form action="{{route('requests.store')}}" method="post" enctype="multipart/form-data">
+                        @csrf
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">full Name</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="+218 92-XXX XXX XX">
+                                <label for="phone">+218 92-XXX XXX XX</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" name="email" class="form-control" id="mail" placeholder="Your Email">
                                 <label for="mail">Your Email</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
+                                <input type="text" name="nationality" class="form-control" id="nationality" placeholder="Nationality ">
+                                <label for="mail">Nationality</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <select class="form-select" id="service">
-                                    <option selected>Digital Marketing</option>
-                                    <option value="">Social Marketing</option>
-                                    <option value="">Content Marketing</option>
-                                    <option value="">E-mail Marketing</option>
-                                </select>
-                                <label for="service">Choose A Service</label>
+                                <input type="date" class="form-control" name="birth" id="birth" placeholder="Date of Birth ">
+                                <label for="mobile">Date of Birth </label>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-sm-6">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                    style="height: 130px"></textarea>
-                                <label for="message">Message</label>
+                                <input type="text" name="city" class="form-control" id="city" placeholder="City ">
+                                <label for="city">City</label>
                             </div>
                         </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input class="form-control" name="martial_status" placeholder="Martial Status" id="martial_status">
+                                <label for="Martial Status">Martial Status</label>
+                            </div>
                         </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input class="form-control" name="address" placeholder="Address" id="address">
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" name="about" placeholder="Tell us about your self " id="about"
+                                    style="height: 130px"></textarea>
+                                <label for="about">Tell us about your self </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="file" class="form-control" name="cv" id="cv" style="height: 130px;">
+                                <label for="cv">Attach CV</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button class="btn btn-light w-100 py-3" type="submit">Submit</button>
+                            <br> <br>
+                        </div>
+                    </form>
                     </div>
+
                 </div>
             </div>
         </div>
