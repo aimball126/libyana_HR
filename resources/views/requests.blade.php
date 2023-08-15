@@ -60,10 +60,111 @@
                             <td>
 
 
-                                <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target=".destroy{{$product->id}}">
+
+                                <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target=".edit{{$product->id}}">
                                     <i class="fa fa-eye mx-1"></i> عرض الملف
                                 </button>
+                                <div class="modal fade edit{{$product->id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
 
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="p-3">
+
+
+
+
+
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>الإسم بالكامل</label>
+                                                                <input disabled class="form-control" name="name" type="text" value="{{$product->name}}" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>رقم الهاتف</label>
+                                                                <input disabled class="form-control" name="phone" type="text" value="{{$product->phone}}" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>العنوان</label>
+                                                                <input disabled class="form-control" name="name" type="text" value="{{$product->address}}" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>تاريخ الميلاد</label>
+                                                                <input disabled class="form-control" name="phone" type="text" value="{{$product->birth}}" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label>المدينة</label>
+                                                                <input disabled class="form-control" name="name" type="text" value="{{$product->city}}" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label>الرقم الوطني</label>
+                                                                <input disabled class="form-control" name="phone" type="text" value="{{$product->nationality}}" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label>الحالة الإجتماعية</label>
+                                                                <input disabled class="form-control" name="name" type="text" value="{{$product->martial_status}}" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>نبذة شخصية</label>
+                                                                <textarea disabled class="form-control" name="about" rows="4" required>{{$product->about}}</textarea>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="row">
+                                                    <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+
+                                                        <a href="{{$product->cv}}" class="btn btn-primary">عرض السيرة الذاتية</a>
+                                                        <a href="{{$product->cv}}" class="btn btn-primary" download="resume.pdf">تنزيل السيرة الذاتية</a>
+                                                    </div>
+                                                        <button type="button" class="btn btn-danger waves-effect waves-light" data-dismiss="modal">اغلاق </button>
+                                                    </div></div>
+                                                </div>
+
+
+
+
+
+
+
+
+
+
+                                                </div>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
 
                             </td>
 

@@ -37,7 +37,7 @@
     </style>
 <head>
     <meta charset="utf-8">
-    <title>GrowMark - Digital Marketing HTML Template</title>
+    <title>LIBYANA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -105,8 +105,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-lg-4">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">Dashboard</a>
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="/dashboard" class="nav-item nav-link">Dashboard</a>
                     </div>
                 </div>
             </nav>
@@ -142,7 +142,7 @@
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-7 text-end">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>GrowMark</strong>
+                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>Libyana</strong>
                                     </p>
                                     <h1 class="display-1 text-white mb-5 animated slideInLeft">Ready to Grow Your
                                         Business</h1>
