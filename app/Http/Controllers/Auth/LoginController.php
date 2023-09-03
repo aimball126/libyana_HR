@@ -42,11 +42,11 @@ class LoginController extends Controller
 
     public function login(Request $request)
 
-    {   
+    {
 
         $input = $request->all();
 
-  
+
 
         $this->validate($request, [
 
@@ -56,7 +56,7 @@ class LoginController extends Controller
 
         ]);
 
-  
+
 
         $fieldType = filter_var($request->name, FILTER_VALIDATE_EMAIL) ? 'email' : 'name';
 
@@ -64,7 +64,7 @@ class LoginController extends Controller
 
         {
 
-            return redirect()->route('home');
+            return redirect()->route('dashboard');
 
         }else{
 
@@ -74,7 +74,7 @@ class LoginController extends Controller
 
         }
     }
-          
 
- 
+
+
 }

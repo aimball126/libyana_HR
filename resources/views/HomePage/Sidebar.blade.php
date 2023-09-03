@@ -21,17 +21,9 @@
                     </a>
                 </li>
 
-                @role('super_admin|seller')
-                <li>
 
 
-                        <li><a href="/products"><i class="mdi mdi-cart"></i> منتجات الموقع</a></li>
-                        <li><a href="/colors"><i class="mdi mdi-palette"></i> الوان المنتجات</a></li>
-                        <li><a href="/sizes"><i class="mdi mdi-ruler"></i> مقاسات المنتجات</a></li>
-                        <li><a href="/features"><i class="mdi mdi-shape"></i> خصائص اخري</a></li>
 
-                </li>
-                @endrole
 
             </ul>
         </div>

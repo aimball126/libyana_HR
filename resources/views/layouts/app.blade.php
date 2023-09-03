@@ -56,11 +56,7 @@
 
 
 
-                    <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
-                        <a class="nav-link waves-effect" href="#" id="btn-fullscreen">
-                            <i class="mdi mdi-arrow-expand-all noti-icon"></i>
-                        </a>
-                    </li>
+
 
 
 
@@ -71,9 +67,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
 
-                                <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> حسابي</a>
-                                <a class="dropdown-item d-block" href="#"><i class="mdi mdi-settings"></i> الإعدادات</a>
-                                <div class="dropdown-divider"></div>
+
                                 <form action="{{url('/logout')}}" method="post">
                                     @csrf
                                     <button class="dropdown-item text-danger" type="submit"><i class="mdi mdi-power text-danger"></i> تسجيل الخروج</button>

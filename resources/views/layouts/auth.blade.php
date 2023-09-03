@@ -23,7 +23,7 @@
     <!-- Begin page -->
     <div class="accountbg"></div>
     <div id="app">
-        
+
         @yield("content")
     </div>
     <!-- END wrapper -->

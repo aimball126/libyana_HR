@@ -1,6 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+        .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
         .text-white {
     color: white;
 }
@@ -123,15 +241,11 @@
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-7 text-start">
-                                    <p class="fs-4 text-white animated slideInRight">Join Now
 
-                                    </p>
-                                    <h1 class="display-1 text-white mb-4 animated slideInRight">find your dream job in libyan today</h1>
-                                    <a href=""
-                                        class="btn btn-warning rounded-pill py-3 px-5 animated slideInRight">Join Now</a>
-                                </div>
+                            <div class="col-lg-7 text-start">
+                              <p class="fs-4 text-white animated slideInRight">Join Now</p>
+                              <h1 class="display-1 text-white mb-4 animated slideInRight">find your dream job in Libyan today</h1>
+                              <a href="#target-section" class="btn btn-warning rounded-pill py-3 px-5 animated slideInRight">Join Now</a>
                             </div>
                         </div>
                     </div>
@@ -205,6 +319,7 @@
                         <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="img/icon/icon-9.png" alt="Icon">
                         </div>
+
                         <h5 class="custom-heading">Friendly Team</h5>
                         <p class="mb-0">Know the market before taking any step, reduce
                             risks before you go.</p>
@@ -244,11 +359,33 @@
     </div>
     <!-- About End -->
     <div class="rectangle">
-        <p class="mb-0">Know the market before taking any step, reduce
-            risks before you go.</p>
+        <h2 class="mb-0 text-right">الأسئلة الشائعة.</h2>
+      </div>
 
+      <h5 class="mb-0 text-center">ماهي الشهادات المطلوبة للوظيفة؟</h5>
 
-    </div>
+        <h5 class="mb-0 text-center">الشهادات المطلوبة تختلف حسب الوظيفة المعلنة</h5>
+        <br>
+        <h5 class="mb-0 text-center">هل تقدم الشركة برامج تدريب وتطوير للموظفين؟</h5>
+
+        <h5 class="mb-0 text-center">نعم، توجد برامج تدريب وتطوير للموظفين</h5>
+        <br>
+        <h5 class="mb-0 text-center">كيف يتم تحديد الرواتب والمزايا للوظيفة؟</h5>
+         <h5 class="mb-0 text-center">الرواتب والمزايا تحدد وفقًا للسياسة الداخلية والمؤهلات والخبرة</h5>
+        <br>
+        <h5 class="mb-0 text-center">هل هناك فرص لزيادة الرواتب؟</h5>
+         <h5 class="mb-0 text-center">نعم، هناك فرص لزيادة الرواتب حسب الأداء والتقدم الوظيفي</h5>
+        <br>
+        <h5 class="mb-0 text-center"> هل يمكن الحصول على معلومات إضافية عن الشركة وتاريخها؟</h5>
+        <h5 class="mb-0 text-center">يمكن الحصول على معلومات إضافية من موقع الشركة أو الاتصال بها</h5>
+       <br>
+       <h5 class="mb-0 text-center"> كيف يتم اتخاذ قرار بشأن المتقدمين المناسبين؟</h5>
+       <h5 class="mb-0 text-center">يتم اتخاذ قرارات بشأن المتقدمين المناسبين بعد تقييم شامل للمؤهلات والخبرات والمهارات</h5>
+      <br>
+      <h5 class="mb-0 text-center">ماهي المجالات المطلوبه للتقديم على الوظائف في الشركة؟</h5>
+       <h5 class="mb-0 text-center">المجالات المطلوبة تتغير وفقًا لاحتياجات الشركة. يُرجى الاطلاع على إعلانات التوظيف لمعرفة المجالات المحددة</h5>
+      <br>
+
     <!-- Video Modal Start -->
     <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -281,7 +418,7 @@
         <div class="container">
             <div class="row g-5">
 
-                <div class="col-lg-6 wow fadeInUp  purple-bg data-wow-delay=0.5s " data-wow-delay="0.1s">
+                <div class="col-lg-6 wow fadeInUp  purple-bg data-wow-delay=0.5s " data-wow-delay="0.1s" id="target-section">
 
                     <br>  <br>
 
@@ -387,7 +524,21 @@
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
         <div class="container">
+            <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"
+  ><i class="fab fa-facebook-f"></i
+></a>
+<a class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button"
+  ><i class="fab fa-youtube"></i
+></a>
+<a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"
+  ><i class="fab fa-instagram"></i
+></a>
+<a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
+  ><i class="fab fa-twitter"></i
+></a>
+
             <div class="row">
+
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
                 </div>

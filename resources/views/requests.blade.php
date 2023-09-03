@@ -16,7 +16,25 @@
 @endsection
 
 @section('content')
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-heading p-3">
+                <div class="mini-stat-icon float-right"><i class="mdi mdi-view-dashboard bg-warning  text-white"></i></div>
+                <div>
+                    <h5 class="font-16">طلبات التوظيف</h5>
+                </div>
+                <h3 class="mt-2  d-inline"> {{\App\Requestt::count()}} </h3><small class="text-muted d-inline">طلب</small>
+                <div class="progress mt-2" style="height: 4px;">
+                    <div role="progressbar" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-warning" style="width: 100%;"></div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+
+
+</div>
 <div class="row" dir="rtl">
     <div class="col-12">
         <div class="card mg-b-30">
