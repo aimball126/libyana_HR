@@ -116,7 +116,7 @@ br
                                     <li class="breadcrumb-item btn-group" dir="rtl">
                                         @yield("buttons")
                                     </li>
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">لوحة التحكم</a></li>
+                                    <li class="breadcrumb-item"><a href="/dashboard">لوحة التحكم</a></li>
                                     @yield("breadcrumb")
                                 </ol>
                             </div>
